@@ -1,0 +1,12 @@
+User ID:123457
+
+User Name:wfy
+
+User Age:21
+
+User Gender:man
+
+User Device Number:12345678
+
+User Phone Number:12345123456
+

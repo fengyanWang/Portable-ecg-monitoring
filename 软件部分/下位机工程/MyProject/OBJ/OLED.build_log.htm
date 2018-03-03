@@ -1,0 +1,359 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\×ÀÃæ\ZZU-Study-2017\1.±ÏÉè\project\MyProject_V1.3\USER\OLED.uvprojx
+Project File Date:  05/19/2017
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+Program Size: Code=32488 RO-data=2948 RW-data=33756 ZI-data=7028  
+FromELF: creating hex file...
+"..\OBJ\OLED.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+
+Set JLink Project File to "E:\×ÀÃæ\ZZU-Study-2017\1.±ÏÉè\project\MyProject_V1.3\USER\JLinkSettings.ini"
+* JLink Info: Device "STM32F103RC" selected (256 KB flash, 48 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.80g, compiled Feb 13 2014 20:50:02
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+S/N : 304423265 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103RC
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+nings, 0 errors
+compiling spi.c...
+compiling malloc.c...
+compiling ADS1293_Driver.c...
+..\HARDWARE\ADS1293_Driver\ADS1293_Driver.c(291): warning:  #177-D: variable "i" was declared but never referenced
+        int i=0;
+..\HARDWARE\ADS1293_Driver\ADS1293_Driver.c: 1 warning, 0 errors
+compiling SPI_UserDriver.c...
+compiling uart_communicate.c...
+compiling stm32f10x_init.c...
+compiling DateProce.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_spi.c...
+linking...
+Program Size: Code=32492 RO-data=2948 RW-data=33756 ZI-data=7028  
+FromELF: creating hex file...
+"..\OBJ\OLED.axf" - 0 Error(s), 7 Warning(s).
+G - give arg types
+  void OLED_Plot_ECG();
+..\HARDWARE\Function\function.h(39): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG1 - give arg types
+  void OLED_Plot_ECG1();
+..\HARDWARE\Function\function.h(40): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG2 - give arg types
+  void OLED_Plot_ECG2();
+..\HARDWARE\Function\function.h(43): warning:  #1295-D: Deprecated declaration OLED_Show_HeartRate - give arg types
+  void OLED_Show_HeartRate();
+..\HARDWARE\Function\function.h(45): warning:  #1295-D: Deprecated declaration Display1_Function - give arg types
+  void Display1_Function();
+..\HARDWARE\Function\function.h(47): warning:  #1295-D: Deprecated declaration BspInit - give arg types
+  void BspInit();
+..\HARDWARE\Function\function.h(48): warning:  #1295-D: Deprecated declaration ECGDate_Handle - give arg types
+  void ECGDate_Handle();
+..\HARDWARE\Function\function.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\KEY\exti.h(19): warning:  #1295-D: Deprecated declaration Key_Function - give arg types
+  u8 Key_Function();
+..\HARDWARE\KEY\exti.h(20): warning:  #1295-D: Deprecated declaration Display_Function - give arg types
+  void Display_Function();
+main.c: 26 warnings, 0 errors
+compiling oled.c...
+..\HARDWARE\OLED\oled.h(53): warning:  #1295-D: Deprecated declaration OLED_Show_HC05Status - give arg types
+  u8 OLED_Show_HC05Status();
+..\HARDWARE\OLED\oled.h(57): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HARDWARE\OLED\oled.h(58): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HARDWARE\OLED\oled.h(63): warning:  #1295-D: Deprecated declaration IIC_Wait_Ack - give arg types
+  void IIC_Wait_Ack();
+..\HARDWARE\KEY\key.h(16): warning:  #1295-D: Deprecated declaration KEY_Scan - give arg types
+  u8 KEY_Scan();        //°´¼üÉ¨Ãèº¯ÊýÉùÃ÷
+..\HARDWARE\Function\function.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\LED\led.h(15): warning:  #1295-D: Deprecated declaration WaterLights - give arg types
+  void WaterLights();
+..\HARDWARE\KEY\exti.h(19): warning:  #1295-D: Deprecated declaration Key_Function - give arg types
+  u8 Key_Function();
+..\HARDWARE\KEY\exti.h(20): warning:  #1295-D: Deprecated declaration Display_Function - give arg types
+  void Display_Function();
+..\HARDWARE\DateProce\DateProce.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Function\function.h(31): warning:  #1295-D: Deprecated declaration ElectrodeOff - give arg types
+  void ElectrodeOff();
+..\HARDWARE\Function\function.h(32): warning:  #1295-D: Deprecated declaration OLED_Show_Frame - give arg types
+  void OLED_Show_Frame();
+..\HARDWARE\Function\function.h(33): warning:  #1295-D: Deprecated declaration OLED_ShowDate - give arg types
+  void OLED_ShowDate();
+..\HARDWARE\Function\function.h(34): warning:  #1295-D: Deprecated declaration OLED_ShowDate1 - give arg types
+  void OLED_ShowDate1();
+..\HARDWARE\Function\function.h(35): warning:  #1295-D: Deprecated declaration OLED_Show_Temp - give arg types
+  void OLED_Show_Temp();
+..\HARDWARE\Function\function.h(36): warning:  #1295-D: Deprecated declaration OLED_Show_Temp1 - give arg types
+  void OLED_Show_Temp1();
+..\HARDWARE\Function\function.h(38): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG - give arg types
+  void OLED_Plot_ECG();
+..\HARDWARE\Function\function.h(39): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG1 - give arg types
+  void OLED_Plot_ECG1();
+..\HARDWARE\Function\function.h(40): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG2 - give arg types
+  void OLED_Plot_ECG2();
+..\HARDWARE\Function\function.h(43): warning:  #1295-D: Deprecated declaration OLED_Show_HeartRate - give arg types
+  void OLED_Show_HeartRate();
+..\HARDWARE\Function\function.h(45): warning:  #1295-D: Deprecated declaration Display1_Function - give arg types
+  void Display1_Function();
+..\HARDWARE\Function\function.h(47): warning:  #1295-D: Deprecated declaration BspInit - give arg types
+  void BspInit();
+..\HARDWARE\Function\function.h(48): warning:  #1295-D: Deprecated declaration ECGDate_Handle - give arg types
+  void ECGDate_Handle();
+..\HARDWARE\Function\function.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\OLED\oled.c: 24 warnings, 0 errors
+compiling beep.c...
+compiling function.c...
+..\HARDWARE\OLED\oled.h(53): warning:  #1295-D: Deprecated declaration OLED_Show_HC05Status - give arg types
+  u8 OLED_Show_HC05Status();
+..\HARDWARE\OLED\oled.h(57): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HARDWARE\OLED\oled.h(58): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HARDWARE\OLED\oled.h(63): warning:  #1295-D: Deprecated declaration IIC_Wait_Ack - give arg types
+  void IIC_Wait_Ack();
+..\HARDWARE\KEY\key.h(16): warning:  #1295-D: Deprecated declaration KEY_Scan - give arg types
+  u8 KEY_Scan();        //°´¼üÉ¨Ãèº¯ÊýÉùÃ÷
+..\HARDWARE\Function\function.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\LED\led.h(15): warning:  #1295-D: Deprecated declaration WaterLights - give arg types
+  void WaterLights();
+..\HARDWARE\KEY\exti.h(19): warning:  #1295-D: Deprecated declaration Key_Function - give arg types
+  u8 Key_Function();
+..\HARDWARE\KEY\exti.h(20): warning:  #1295-D: Deprecated declaration Display_Function - give arg types
+  void Display_Function();
+..\HARDWARE\DateProce\DateProce.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Function\function.h(31): warning:  #1295-D: Deprecated declaration ElectrodeOff - give arg types
+  void ElectrodeOff();
+..\HARDWARE\Function\function.h(32): warning:  #1295-D: Deprecated declaration OLED_Show_Frame - give arg types
+  void OLED_Show_Frame();
+..\HARDWARE\Function\function.h(33): warning:  #1295-D: Deprecated declaration OLED_ShowDate - give arg types
+  void OLED_ShowDate();
+..\HARDWARE\Function\function.h(34): warning:  #1295-D: Deprecated declaration OLED_ShowDate1 - give arg types
+  void OLED_ShowDate1();
+..\HARDWARE\Function\function.h(35): warning:  #1295-D: Deprecated declaration OLED_Show_Temp - give arg types
+  void OLED_Show_Temp();
+..\HARDWARE\Function\function.h(36): warning:  #1295-D: Deprecated declaration OLED_Show_Temp1 - give arg types
+  void OLED_Show_Temp1();
+..\HARDWARE\Function\function.h(38): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG - give arg types
+  void OLED_Plot_ECG();
+..\HARDWARE\Function\function.h(39): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG1 - give arg types
+  void OLED_Plot_ECG1();
+..\HARDWARE\Function\function.h(40): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG2 - give arg types
+  void OLED_Plot_ECG2();
+..\HARDWARE\Function\function.h(43): warning:  #1295-D: Deprecated declaration OLED_Show_HeartRate - give arg types
+  void OLED_Show_HeartRate();
+..\HARDWARE\Function\function.h(45): warning:  #1295-D: Deprecated declaration Display1_Function - give arg types
+  void Display1_Function();
+..\HARDWARE\Function\function.h(47): warning:  #1295-D: Deprecated declaration BspInit - give arg types
+  void BspInit();
+..\HARDWARE\Function\function.h(48): warning:  #1295-D: Deprecated declaration ECGDate_Handle - give arg types
+  void ECGDate_Handle();
+..\HARDWARE\Function\function.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\Function\function.c(567): warning:  #177-D: variable "t" was declared but never referenced
+        u8 t=0;
+..\HARDWARE\Function\function.c(689): warning:  #111-D: statement is unreachable
+                        break;
+..\HARDWARE\Function\function.c(693): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\Function\function.c: 27 warnings, 0 errors
+compiling exti.c...
+..\HARDWARE\OLED\oled.h(53): warning:  #1295-D: Deprecated declaration OLED_Show_HC05Status - give arg types
+  u8 OLED_Show_HC05Status();
+..\HARDWARE\OLED\oled.h(57): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HARDWARE\OLED\oled.h(58): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HARDWARE\OLED\oled.h(63): warning:  #1295-D: Deprecated declaration IIC_Wait_Ack - give arg types
+  void IIC_Wait_Ack();
+..\HARDWARE\KEY\key.h(16): warning:  #1295-D: Deprecated declaration KEY_Scan - give arg types
+  u8 KEY_Scan();        //°´¼üÉ¨Ãèº¯ÊýÉùÃ÷
+..\HARDWARE\Function\function.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\LED\led.h(15): warning:  #1295-D: Deprecated declaration WaterLights - give arg types
+  void WaterLights();
+..\HARDWARE\KEY\exti.h(19): warning:  #1295-D: Deprecated declaration Key_Function - give arg types
+  u8 Key_Function();
+..\HARDWARE\KEY\exti.h(20): warning:  #1295-D: Deprecated declaration Display_Function - give arg types
+  void Display_Function();
+..\HARDWARE\DateProce\DateProce.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Function\function.h(31): warning:  #1295-D: Deprecated declaration ElectrodeOff - give arg types
+  void ElectrodeOff();
+..\HARDWARE\Function\function.h(32): warning:  #1295-D: Deprecated declaration OLED_Show_Frame - give arg types
+  void OLED_Show_Frame();
+..\HARDWARE\Function\function.h(33): warning:  #1295-D: Deprecated declaration OLED_ShowDate - give arg types
+  void OLED_ShowDate();
+..\HARDWARE\Function\function.h(34): warning:  #1295-D: Deprecated declaration OLED_ShowDate1 - give arg types
+  void OLED_ShowDate1();
+..\HARDWARE\Function\function.h(35): warning:  #1295-D: Deprecated declaration OLED_Show_Temp - give arg types
+  void OLED_Show_Temp();
+..\HARDWARE\Function\function.h(36): warning:  #1295-D: Deprecated declaration OLED_Show_Temp1 - give arg types
+  void OLED_Show_Temp1();
+..\HARDWARE\Function\function.h(38): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG - give arg types
+  void OLED_Plot_ECG();
+..\HARDWARE\Function\function.h(39): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG1 - give arg types
+  void OLED_Plot_ECG1();
+..\HARDWARE\Function\function.h(40): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG2 - give arg types
+  void OLED_Plot_ECG2();
+..\HARDWARE\Function\function.h(43): warning:  #1295-D: Deprecated declaration OLED_Show_HeartRate - give arg types
+  void OLED_Show_HeartRate();
+..\HARDWARE\Function\function.h(45): warning:  #1295-D: Deprecated declaration Display1_Function - give arg types
+  void Display1_Function();
+..\HARDWARE\Function\function.h(47): warning:  #1295-D: Deprecated declaration BspInit - give arg types
+  void BspInit();
+..\HARDWARE\Function\function.h(48): warning:  #1295-D: Deprecated declaration ECGDate_Handle - give arg types
+  void ECGDate_Handle();
+..\HARDWARE\Function\function.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\KEY\exti.h(19): warning:  #1295-D: Deprecated declaration Key_Function - give arg types
+  u8 Key_Function();
+..\HARDWARE\KEY\exti.h(20): warning:  #1295-D: Deprecated declaration Display_Function - give arg types
+  void Display_Function();
+..\HARDWARE\KEY\exti.c: 26 warnings, 0 errors
+linking...
+Program Size: Code=32496 RO-data=2948 RW-data=33756 ZI-data=7028  
+FromELF: creating hex file...
+"..\OBJ\OLED.axf" - 0 Error(s), 103 Warning(s).
+ùÃ÷
+..\HARDWARE\Function\function.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\LED\led.h(15): warning:  #1295-D: Deprecated declaration WaterLights - give arg types
+  void WaterLights();
+..\HARDWARE\KEY\exti.h(19): warning:  #1295-D: Deprecated declaration Key_Function - give arg types
+  u8 Key_Function();
+..\HARDWARE\KEY\exti.h(20): warning:  #1295-D: Deprecated declaration Display_Function - give arg types
+  void Display_Function();
+..\HARDWARE\DateProce\DateProce.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Function\function.h(31): warning:  #1295-D: Deprecated declaration ElectrodeOff - give arg types
+  void ElectrodeOff();
+..\HARDWARE\Function\function.h(32): warning:  #1295-D: Deprecated declaration OLED_Show_Frame - give arg types
+  void OLED_Show_Frame();
+..\HARDWARE\Function\function.h(33): warning:  #1295-D: Deprecated declaration OLED_ShowDate - give arg types
+  void OLED_ShowDate();
+..\HARDWARE\Function\function.h(34): warning:  #1295-D: Deprecated declaration OLED_ShowDate1 - give arg types
+  void OLED_ShowDate1();
+..\HARDWARE\Function\function.h(35): warning:  #1295-D: Deprecated declaration OLED_Show_Temp - give arg types
+  void OLED_Show_Temp();
+..\HARDWARE\Function\function.h(36): warning:  #1295-D: Deprecated declaration OLED_Show_Temp1 - give arg types
+  void OLED_Show_Temp1();
+..\HARDWARE\Function\function.h(38): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG - give arg types
+  void OLED_Plot_ECG();
+..\HARDWARE\Function\function.h(39): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG1 - give arg types
+  void OLED_Plot_ECG1();
+..\HARDWARE\Function\function.h(40): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG2 - give arg types
+  void OLED_Plot_ECG2();
+..\HARDWARE\Function\function.h(43): warning:  #1295-D: Deprecated declaration OLED_Show_HeartRate - give arg types
+  void OLED_Show_HeartRate();
+..\HARDWARE\Function\function.h(45): warning:  #1295-D: Deprecated declaration Display1_Function - give arg types
+  void Display1_Function();
+..\HARDWARE\Function\function.h(47): warning:  #1295-D: Deprecated declaration BspInit - give arg types
+  void BspInit();
+..\HARDWARE\Function\function.h(48): warning:  #1295-D: Deprecated declaration ECGDate_Handle - give arg types
+  void ECGDate_Handle();
+..\HARDWARE\Function\function.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\KEY\exti.h(19): warning:  #1295-D: Deprecated declaration Key_Function - give arg types
+  u8 Key_Function();
+..\HARDWARE\KEY\exti.h(20): warning:  #1295-D: Deprecated declaration Display_Function - give arg types
+  void Display_Function();
+..\HARDWARE\KEY\exti.c: 31 warnings, 0 errors
+linking...
+Program Size: Code=32496 RO-data=2948 RW-data=33756 ZI-data=7028  
+FromELF: creating hex file...
+"..\OBJ\OLED.axf" - 0 Error(s), 123 Warning(s).
+aration Key_Function - give arg types
+  u8 Key_Function();
+..\HARDWARE\KEY\exti.h(20): warning:  #1295-D: Deprecated declaration Display_Function - give arg types
+  void Display_Function();
+..\HARDWARE\DateProce\DateProce.h(25): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Function\function.h(31): warning:  #1295-D: Deprecated declaration ElectrodeOff - give arg types
+  void ElectrodeOff();
+..\HARDWARE\Function\function.h(32): warning:  #1295-D: Deprecated declaration OLED_Show_Frame - give arg types
+  void OLED_Show_Frame();
+..\HARDWARE\Function\function.h(33): warning:  #1295-D: Deprecated declaration OLED_ShowDate - give arg types
+  void OLED_ShowDate();
+..\HARDWARE\Function\function.h(34): warning:  #1295-D: Deprecated declaration OLED_ShowDate1 - give arg types
+  void OLED_ShowDate1();
+..\HARDWARE\Function\function.h(35): warning:  #1295-D: Deprecated declaration OLED_Show_Temp - give arg types
+  void OLED_Show_Temp();
+..\HARDWARE\Function\function.h(36): warning:  #1295-D: Deprecated declaration OLED_Show_Temp1 - give arg types
+  void OLED_Show_Temp1();
+..\HARDWARE\Function\function.h(38): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG - give arg types
+  void OLED_Plot_ECG();
+..\HARDWARE\Function\function.h(39): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG1 - give arg types
+  void OLED_Plot_ECG1();
+..\HARDWARE\Function\function.h(40): warning:  #1295-D: Deprecated declaration OLED_Plot_ECG2 - give arg types
+  void OLED_Plot_ECG2();
+..\HARDWARE\Function\function.h(43): warning:  #1295-D: Deprecated declaration OLED_Show_HeartRate - give arg types
+  void OLED_Show_HeartRate();
+..\HARDWARE\Function\function.h(45): warning:  #1295-D: Deprecated declaration Display1_Function - give arg types
+  void Display1_Function();
+..\HARDWARE\Function\function.h(47): warning:  #1295-D: Deprecated declaration BspInit - give arg types
+  void BspInit();
+..\HARDWARE\Function\function.h(48): warning:  #1295-D: Deprecated declaration ECGDate_Handle - give arg types
+  void ECGDate_Handle();
+..\HARDWARE\Function\function.h(52): warning:  #1-D: last line of file ends without a newline
+  #endif  
+..\HARDWARE\KEY\exti.h(13): error:  #130: expected a "{"
+  static int Key0_Count;
+..\HARDWARE\KEY\exti.c(15): warning:  #12-D: parsing restarts here after previous syntax error
+  {
+..\HARDWARE\KEY\exti.c(74): warning:  #940-D: missing return statement at end of non-void function "ElectrodeDetection"
+  }
+..\HARDWARE\KEY\exti.c: 31 warnings, 1 error
+"..\OBJ\OLED.axf" - 10 Error(s), 136 Warning(s).
+Target not created
